@@ -41,7 +41,7 @@ namespace Chamboco.Engine.Entities.Components.Physics
             this.restitution = restitution;
         }
 
-        public override void Start()
+        protected override void Start()
         {
             Configure();
             Entity.Transform.OnSetScale += Entity_OnSetScale;

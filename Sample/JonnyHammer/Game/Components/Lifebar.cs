@@ -32,7 +32,7 @@ namespace JonnyHammer.Game.Components
             lifebarBack = new SolidColorTexture(Color.Red);
         }
 
-        public override void Start()
+        protected override void Start()
         {
             Entity.StartCoroutine(Desapear());
             renderer = Entity.GetComponent<SpriteRenderer>();
@@ -86,7 +86,7 @@ namespace JonnyHammer.Game.Components
             lifeBarWidth = renderer.Width * CurrentLife / TotalLife;
         }
 
-        public override void Draw(SpriteBatch spriteBatch)
+        protected override void Draw(SpriteBatch spriteBatch)
         {
             base.Draw(spriteBatch);
             lifebarBack.Draw(spriteBatch, new ((int)transform.X, (int)transform.Y, renderer.Width, lifeBarHeight));

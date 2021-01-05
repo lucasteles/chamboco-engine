@@ -132,7 +132,7 @@ namespace Chamboco.Engine.Entities.Components
             Property = property;
         }
 
-        public override void Start()
+        protected override void Start()
         {
             entitySprite = Entity.GetComponent<SpriteRenderer>();
             Begin();

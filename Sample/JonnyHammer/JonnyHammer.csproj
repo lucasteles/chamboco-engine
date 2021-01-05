@@ -19,7 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Chamboco.Engine\Chamboco.Engine.csproj" />
+    <ProjectReference Include="..\..\Chamboco.Engine\Chamboco.Engine.csproj" />
   </ItemGroup>
 
 </Project>

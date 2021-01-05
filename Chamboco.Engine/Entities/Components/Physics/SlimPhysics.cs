@@ -14,7 +14,7 @@ namespace Chamboco.Engine.Entities.Components.Physics
         public float Gravity { get; } = 8f;
         public bool KeepOnCameraBounds { get; set; }
 
-        public override void Start()
+        protected override void Start()
         {
             collider = Entity.GetComponent<Collider.Collider>();
             renderer = Entity.GetComponent<SpriteRenderer>();

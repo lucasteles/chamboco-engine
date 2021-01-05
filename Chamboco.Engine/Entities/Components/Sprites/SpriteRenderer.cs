@@ -28,7 +28,7 @@ namespace Chamboco.Engine.Entities.Components.Sprites
             IsVisible = true;
         }
 
-        public override void Draw(SpriteBatch spriteBatch)
+        protected override void Draw(SpriteBatch spriteBatch)
         {
             if (!IsVisible) return;
 

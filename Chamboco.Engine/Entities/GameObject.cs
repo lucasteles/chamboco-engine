@@ -26,7 +26,7 @@ namespace Chamboco.Engine.Entities
         protected void LoadComponents()
         {
             for (var i = 0; i < components.Count; i++)
-                components[i].Start();
+                components[i].StartComponent();
             didLoad = true;
         }
         protected virtual void Update(GameTime gameTime) { }
@@ -57,7 +57,7 @@ namespace Chamboco.Engine.Entities
 
             for (var i = 0; i < components.Count; i++)
                 if (components[i].IsActive)
-                    components[i].Draw(spriteBatch);
+                    components[i].DrawComponent(spriteBatch);
         }
 
         public T AddComponent<T>(T component) where T : Component

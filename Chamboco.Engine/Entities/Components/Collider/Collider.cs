@@ -142,7 +142,7 @@ namespace Chamboco.Engine.Entities.Components.Collider
             return false;
         }
 
-        public override void Start()
+        protected override void Start()
         {
             physics = Entity.GetComponent<Physics.Physics>();
         }
@@ -156,7 +156,8 @@ namespace Chamboco.Engine.Entities.Components.Collider
 
             base.Update(gameTime);
         }
-        public override void Draw(SpriteBatch spriteBatch)
+
+        protected override void Draw(SpriteBatch spriteBatch)
         {
             if (!IsDebug) return;
 
