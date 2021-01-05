@@ -1,5 +1,5 @@
 # Chamboco Engine
-A simple monogame engine based on Unity
+A simple monogame engine inspired by Unity
 
 
 Before build:
